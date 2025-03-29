@@ -1,0 +1,50 @@
+/*
+ * layout.css
+ * header/footer 모든 페이지의 공통 스타일 적용
+*/
+.skipnav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.skipnav a {
+    position: absolute; /* skipnav를 기준으로 정렬 */
+    left: 0;
+    top: -100px;
+    width: 100%;
+    display: block;
+    background-color: #0063AF;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+.skipnav a.menu {
+    background-color: #00AF00;
+}
+.skipnav a:focus {
+    top: 0;
+}
+
+
+header {
+    display: flex;
+    position: relative;
+    z-index: 100;/*header는 맨위*/
+    height: var(--header-h);
+    color: #1d1d1d;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.6316em;
+}
+header h1.logo {
+    content: "";
+    background-image: url(../images/logo.png);
+}
+header h1.logo a {
+    height: ;
+}
+header nav.gnb 
+
+/******메뉴열렸을때 추가 ******/
