@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="shortcut icon" href="#n">
+    <link rel="stylesheet" href="css/font.css"> <!-- Added link to font.css -->
     <title>한국만화 박물관</title>
 </head>
 <body>
@@ -14,7 +15,9 @@
     </div>
     <div id="wrap">
         <header>
-            <h1 class="logo"><a href="index.html">만화박물관</a></h1>
+            <h1 class="logo">
+                <a href="index.html"><span class="visually-hidden">만화박물관</span></a>
+            </h1>
             <nav class="gnb">
                 <button class="gnb_open">메뉴열기</button>
                 <div class="gnb_wrap">
@@ -84,7 +87,33 @@
                 <!-- 하나의 버튼이 열기/닫기 기능 -->
             </div>
         </header>
-        <section class="Visual"></section>
+        <section class="Visual">
+            <div class="visual-bg"></div>
+            <div class="hero-text">
+                <div class="text-wrap">
+                    <div class="sub">
+                        <span>History of<br>Korean Comics</span>
+                        <img src="images/logo_small.png" alt="한국만화박물관 로고">
+                    </div>
+                    <h2>KOREA<br>MANHWA<br>MUSEUM</h2>
+                </div>
+            </div>
+        </section>
+        <section class="ex">
+            <div class="ex-cards">
+                <button class="arrow prev">〈</button>
+
+                <img src="images/ex1.png" alt="전시 이미지 1">
+                <img src="images/ex2.png" alt="전시 이미지 2">
+                <img src="images/ex3.png" alt="전시 이미지 3">
+                <button class="arrow next">〉</button>
+            </div>
+            <div class="ex_tit"><p>THE SPECIAL EXHIBITION
+                PIECES THAT
+                ARE CURRENTLY
+                BEING DISPLAYED
+                IN THIS MUSEUM</p></div>
+        </section>
         <section class="Info"></section> 
         <section class="Notice"></section> 
         <section class="News"></section> 

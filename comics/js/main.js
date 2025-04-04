@@ -1,6 +1,3 @@
-
-/**************************** visual 팝업 (시작) ************************************/
-
 $(document).ready(function(){
     
     const visual_swiper = new Swiper('.visual .swiper', { /* 팝업을 감싼는 요소의 class명 */
@@ -41,9 +38,15 @@ $(document).ready(function(){
 
     });
 
-
-
-
+    // Ex 카드 인터랙션
+    $('.ex-cards img').on('mouseenter', function() {
+      $(this).css({
+        'transform': 'scale(1.08)',
+        'transition': 'transform 0.3s ease'
+      });
+    }).on('mouseleave', function() {
+      $(this).css('transform', 'scale(1)');
+    });
 
     /**************************** offer 팝업 (종료) ************************************/
        

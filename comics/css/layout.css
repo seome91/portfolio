@@ -38,13 +38,99 @@ header {
     justify-content: space-between;
     padding: 0 2.6316em;
 }
-header h1.logo {
-    content: "";
-    background-image: url(../images/logo.png);
-}
 header h1.logo a {
-    height: ;
+    display: block;
+    width: 180px;
+    height: 48px;
+    text-indent: -9999px;
+    background: url(../images/logo.png) no-repeat center / contain;
 }
-header nav.gnb 
+header nav.gnb {
+    position: relative;
+    flex: 1;
+    margin-left: 2em;
+}
 
-/******메뉴열렸을때 추가 ******/
+.gnb_wrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.depth1 {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.depth1 > li {
+    position: relative;
+}
+
+.depth1 > li > a {
+    display: block;
+    padding: 1em 0.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #1d1d1d;
+}
+
+.depth2 {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    min-width: 160px;
+    z-index: 50;
+}
+
+.depth1 > li:hover .depth2 {
+    display: flex;
+}
+
+.depth2 li a {
+    display: block;
+    padding: 0.75em 1em;
+    color: #333;
+    text-decoration: none;
+}
+
+.tnb {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.tnb > div a {
+    text-decoration: none;
+    color: #444;
+    font-size: 0.9em;
+}
+
+.gnb_open,
+.gnb_close {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
